@@ -1,0 +1,185 @@
+<?php
+session_start();
+if(isset($_SESSION["luid"]==false))
+{
+header("location:template-frontend.php");
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COLLEGES.......</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/angular.min.js"></script>
+    <script src="bootstrap/js/jquery-1.9.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row" style="width: auto;height:80px">
+
+            <div class="col-md-12" style="background-color:chocolate;color: aliceblue">
+                <div class="text" style=" margin-top:10px ;float:left ;font-family: fantasy">
+
+<!--                    <h1>WELCOME </h1>-->
+                    <ul> WELCOME <?php echo $_SESSION["luid"]; ?>  </ul>
+                   
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="width: auto;height:80px">
+
+            <div class="col-md-12" style="background-color:bisque;color: black">
+            </div>
+        </div>
+        <div class="row" style="width: auto;height:80px">
+
+            <div class="col-md-12" style="background-color:burlywood;color: black">
+            <div class="text" style=" margin-top:10px  ;font-family: fantasy">
+<center>
+                    <h1>Patient-Dashboard</h1><br>
+                </center>
+            </div>
+        </div>
+            </div>
+
+        <div class="row">
+            <div class="col-md-12 bg-danger ">
+                <div class="row " style="margin-top:30px ">
+                    <div class="col-md-3 ">
+                       <a href="sugar-front.html"><div class="card ">
+                            <img class="card-img-top " src="images/download%20(4).jpg" style="width:250px;height:140px ">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">Record-sugar</h5>
+                                <p class="card-text "> If you have diabetes,self-testing your blood sugar can be an important tool in managing your treatment plan.</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                       <a href="bp-front.html"> <div class="card ">
+                            <img class="card-img-top " src="images/download%20(6).jpg" style="height:140px">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">Blood Pressure</h5>
+                                <p class="card-text ">It's also important for managing hypertension that is under control and reducing the risk of complications.</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                  
+                    <div class="col-md-3 ">
+                       <a> <div class="card ">
+                            <img class="card-img-top " src="images/images%20(1).png" style="height:140px">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">Sugar chart</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                       <a> <div class="card ">
+                            <img class="card-img-top " src="images/download.png"  style="height:140px">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">BP Chart</h5>
+                                <p class="card-text ">A. Blood pressure is important because the higher your blood pressure is, the higher your risk of health problems</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row " style="margin-top:30px ">
+                    <div class="col-md-3 ">
+                       <a href="consultancy-front.html"> <div class="card ">
+                            <img class="card-img-top " src="images/download%20(7).jpg">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">Doc Consultancy</h5>
+                                <p class="card-text ">A consultant physician is a senior doctor who practises in one of the medical specialties.
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                        <a><div class="card ">
+                            <img class="card-img-top " src="images/download%20(8).jpg" style="height:150px">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">App Scheduling</h5>
+                                <p class="card-text ">The benefits of scheduling staff and patients and other booking individuals-time savings. </p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                      <a>  <div class="card ">
+                            <img class="card-img-top " src="images/images5.jpg"  style="height:150px">
+                            <div class="card-body ">
+                                <h5 class="card-title " style="font-family: fantasy">Doctor reviews</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                       <a> <div class="card ">
+                            <img class="card-img-top " src="images/download%20(9).jpg" style="height:150px">
+                            <div class="card-body " style="border: 2px black solid color:pink font family:cursiva ">
+                                <h5 class="card-title " style="font-family: fantasy">Patient Profile</h5>
+                                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+ <div class="row" style="width: auto;height:60px">
+
+            <div class="col-md-12" style="background-color:plum; color:aliceblue">
+               <center>
+                <div class="text" style=" margin-top:10px ;float:left ;font-family: fantasy">
+
+    <h3>Thankyou</h3>
+                    
+                    <h1></h1><br>
+
+                </div>
+                </center>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
